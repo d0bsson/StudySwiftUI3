@@ -9,19 +9,25 @@ import SwiftUI
 
 struct RegisterView: View {
     @State private var name = ""
+    @State private var showingModalView = false
+    
     @EnvironmentObject var user: UserManager
     
     var body: some View {
         VStack {
-            TextField("Enter your name", text: $name)
-                .multilineTextAlignment(.center)
+            HStack {
+                TextField("Enter your name", text: $name)
+                    .multilineTextAlignment(.center)
+                Text("\(name.count)")
+            }
             Button(action: registerUser) {
                 HStack{
-                    Image(systemName: "checkmark.circle")
                     Text("OK")
+                    Image(systemName: "checkmark.circle")
                 }
+                .disabled(!(name.count >= 3))
             }
-        }
+        }.padding()
     }
     private func registerUser() {
         if !name.isEmpty {
@@ -30,6 +36,7 @@ struct RegisterView: View {
         }
     }
 }
+
 
 struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {

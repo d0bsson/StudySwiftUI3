@@ -11,6 +11,7 @@ struct ContentView: View {
     @EnvironmentObject var user: UserManager
     @StateObject private var timer = TimeCounter()
     
+    
     var body: some View {
         VStack {
             Text("Hi, \(user.name)!")
@@ -19,12 +20,18 @@ struct ContentView: View {
             Text("\(timer.counter)")
                 .font(.largeTitle)
                 .offset(x: 0, y: 200)
-            Spacer()
-            ButtonView(timer: timer)
-            Spacer()
+            
+            VStack {
+                Spacer()
+                ButtonView(timer: timer)
+                DismissButton()
+                    .offset(x: 0, y: 300)
+                Spacer()
+            }
         }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

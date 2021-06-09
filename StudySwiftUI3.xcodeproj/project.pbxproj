@@ -15,6 +15,7 @@
 		D731F54D267129B0004F2257 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D731F54C267129B0004F2257 /* RegisterView.swift */; };
 		D731F55026712EB3004F2257 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D731F54F26712EB3004F2257 /* UserManager.swift */; };
 		D731F553267131E9004F2257 /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D731F552267131E9004F2257 /* StarterView.swift */; };
+		D731F5592671628C004F2257 /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D731F5582671628C004F2257 /* DismissButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D731F54C267129B0004F2257 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		D731F54F26712EB3004F2257 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		D731F552267131E9004F2257 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
+		D731F5582671628C004F2257 /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				D731F54C267129B0004F2257 /* RegisterView.swift */,
 				D731F54F26712EB3004F2257 /* UserManager.swift */,
 				D731F552267131E9004F2257 /* StarterView.swift */,
+				D731F5582671628C004F2257 /* DismissButton.swift */,
 				D731F53B2670D266004F2257 /* Assets.xcassets */,
 				D731F5402670D266004F2257 /* Info.plist */,
 				D731F53D2670D266004F2257 /* Preview Content */,
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D731F5592671628C004F2257 /* DismissButton.swift in Sources */,
 				D731F5482670D906004F2257 /* TimeCounter.swift in Sources */,
 				D731F54D267129B0004F2257 /* RegisterView.swift in Sources */,
 				D731F553267131E9004F2257 /* StarterView.swift in Sources */,
